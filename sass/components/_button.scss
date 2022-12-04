@@ -1,0 +1,23 @@
+.btn{
+    border: none;
+    padding: 1.2rem 3.2rem;
+    color: currentColor;
+    background: none;
+    font-size: $fs-h6;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.navbar__btn{
+    background-color: $color-brown-2;
+    color: $color-white;
+    display: inline-block;
+}
+
+.btn-text {
+    color: $color-green-2;
+    font-size: $fs-base;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 1.5px solid currentColor;
+}

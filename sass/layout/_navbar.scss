@@ -1,0 +1,47 @@
+.navbar{
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__logoContainer{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__logo{
+        width: 100%;
+    }
+
+    &__appText{
+        font-size: $fs-h5;
+        font-weight: $fw-bold;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__listContainer{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        font-size: $fs-h6;
+        font-weight: $fw-semibold;
+        list-style: none;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: currentColor;
+    }
+
+}

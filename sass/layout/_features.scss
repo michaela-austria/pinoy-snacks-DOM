@@ -1,0 +1,48 @@
+.features{
+    &__container{
+        height: 50rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        margin: 10rem 16.9rem 0 16.9rem;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__imgContainer{
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        justify-content: center;
+    }
+
+    &__iconContainer{
+        width: 5rem;
+        height: 5rem;
+        background-color: $color-brown-2;
+        border-radius: 100%;
+    }
+
+    &__icon{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    &__headline{
+        font-size: $fs-h4;
+        font-weight: $fw-semibold;
+    }
+
+    &__paragraph{
+        font-size: $fs-h6;
+        font-weight: $fw-regular;
+    }
+}

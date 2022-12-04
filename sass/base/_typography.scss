@@ -6,4 +6,37 @@ html{
 
 body{
     font-family: 'Inter', sans-serif;
+    color: $color-black;
+    font-weight: $fw-medium;
+}
+
+.heading-1{
+    font-size: $fs-h1;
+    font-weight: $fw-semibold;
+}
+
+.caption{
+    font-size: $fs-h6;
+    font-weight: $fw-regular;
+}
+
+
+
+
+.labelContainer{
+    width: 93.4rem;
+    margin: 0 auto;
+
+    &__title{
+        font-size: $fs-h5;
+        font-weight: $fw-black;
+        text-transform: uppercase;
+        color: $color-brown-2;
+        margin-bottom: 1.6rem;
+    }
+
+    &__desc{
+        font-size: $fs-h3;
+        font-weight: $fw-medium;
+    }
 }

@@ -23,36 +23,46 @@
                     <li class="navbar__list"><a href="#" class="navbar__link">Features</a></li>
                     <li class="navbar__list"><a href="#" class="navbar__link">Operations</a></li>
                     <li class="navbar__list"><a href="#" class="navbar__link">Testimonials</a></li>
-                    <li class="navbar__list"><a href="#" class="btn navbar__link">Order Now</a></li>
+                    <li class="navbar__list"><a class="btn navbar__btn">Order Now</a></li>
                 </ul>
             </div>
         </nav>
         
         <main>
             <header class="header">
-                <h2 class="header__tagline heading-1">
-                    The first successful and largest <span>Pinoy street food Kiosk</span>
-                </h2>
-
-                <h3 class="header__caption caption"> Pinoy snacks are here to satisfy the Filipino craving for the best Pinoy street food! </h3>
-
-                <a href="#" class="header__btn">Learn More &#8595;</a>
+                <div class="header__textContainer">
+                    <h2 class="header__tagline heading-1">
+                        The first <span>successful</span> and <span>largest</span> Pinoy street food kiosk.
+                    </h2>
+    
+                    <h3 class="header__caption caption"> Pinoy snacks are here to satisfy the Filipino craving for the best Pinoy street food! </h3>
+    
+                    <a href="#" class="btn-text">Learn More &#8595;</a>
+                </div>
+                
 
                 <div class="header__heroImgContainer">
-                    <img src="img/hero-img-1.jpg" alt="hero-img-1" class="header__heroImg">
-                    <img src="img/hero-img-2.jpg" alt="hero-img-2" class="header__heroImg">
-                    <img src="img/hero-img-3.jpg" alt="hero-img-3" class="header__heroImg">
-                    <svg class="header__heroImgWaves">
-                        <use href="img/wave-small.svg"></use>
-                    </svg>
-                    <svg class="header__heroImgWaves">
-                        <use href="img/wave-large.svg"></use>
-                    </svg>
+                    <figure class="header__heroImg header__heroImg--1">
+                        <img src="img/hero-img-1.jpg" alt="hero-img-1">
+                    </figure>
+                    <figure class="header__heroImg header__heroImg--2">
+                        <img src="img/hero-img-2.jpg" alt="hero-img-2">
+                    </figure>
+                    <figure class="header__heroImg header__heroImg--3">
+                        <img src="img/hero-img-3.jpg" alt="hero-img-3">
+                    </figure>
+                    <figure class="header__heroImg header__heroImg--4">
+                        <img src="img/wave-small.svg" alt="wave-small">
+                    </figure>
+                    <figure class="header__heroImg header__heroImg--5">
+                        <img src="img/wave-large.svg" alt="wave-large">
+                    </figure>
                 </div>
             </header>
 
+            <div class="border-top"></div>
 
-            <section class="features">
+            <section class="features margin-default">
                 <div class="labelContainer">
                     <h4 class="labelContainer__title">Features</h4>
                     <h3 class="labelContainer__desc">Order traditional Filipino snacks within the app and avoid long lines.</h3>
@@ -64,11 +74,9 @@
                     </div>
 
                     <div class="features__description">
-                        <div class="features__iconContainer">
-                            <svg class="features__icon">
-                                <use href="img/kiosk.svg"></use>
-                            </svg>
-                        </div>
+                        <figure class="features__iconContainer">
+                            <img src="img/kiosk.svg" alt="kiosk-icon" class="features__icon">
+                        </figure>
 
                         <h5 class="features__headline">Available kiosk in our branches.</h5>
                         <p class="features__paragraph">
@@ -78,15 +86,15 @@
                 </div>
 
                 <div class="features__container">
-                    <div class="features__imgContainer">
+                    <div class="features__imgContainer change-order">
                         <img src="img/Feature-Mobile.png" alt="Pinoy-Snacks-Mobile" class="features__img">
                     </div>
 
                     <div class="features__description">
                         <div class="features__iconContainer">
-                            <svg class="features__icon">
-                                <use href="img/desktop-mobile.svg"></use>
-                            </svg>
+                            <figure class="features__iconContainer">
+                                <img src="img/desktop-mobile.svg" alt="desktop-mobile" class="features__icon">
+                            </figure>
                         </div>
 
                         <h5 class="features__headline">Access the kiosk on your own device.</h5>
@@ -97,7 +105,7 @@
                 </div>
             </section>
 
-
+<!-- 
             <section class="operations">
                 <div class="labelContainer">
                     <h4 class="labelContainer__title">operations</h4>
@@ -111,7 +119,7 @@
                     <h4 class="labelContainer__title">people love it!</h4>
                     <h3 class="labelContainer__desc">Thousands have preferred using Pinoy Snacks Kiosk to get their Filipino Snacks.</h3>
                 </div>
-            </section>
+            </section> -->
         </main>
     </body>
 </html>

@@ -1,6 +1,7 @@
 .btn{
     border: none;
     padding: 1.2rem 3.2rem;
+    font-family: inherit;
     color: currentColor;
     background: none;
     font-size: $fs-h6;
@@ -20,4 +21,16 @@
     text-decoration: none;
     padding-bottom: 6px;
     border-bottom: 1.5px solid currentColor;
+}
+
+
+.slider__btn{
+    width: 5rem;
+    height: 5rem;
+    font-size: $fs-h5;
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
 }

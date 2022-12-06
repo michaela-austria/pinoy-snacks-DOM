@@ -1,0 +1,30 @@
+.slider{
+    width: max-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: max-content 88.4rem max-content;
+    grid-template-rows: 1fr;
+    align-items: center;
+    column-gap: 4rem;
+    position: relative;
+
+    // &>:first-child{
+    .slide{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    // &>:nth-child(2){
+    .slider__btn--left{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    // &>:nth-child(3){
+    .slider__btn--right{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+
+}

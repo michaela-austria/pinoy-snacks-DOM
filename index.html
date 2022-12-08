@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-        <!-- <script src="" async defer></script> -->
+        <script src="index.js" async defer></script>
     </head>
     <body>
         <nav class="navbar">
@@ -21,10 +21,10 @@
 
             <div class="navbar__right">
                 <ul class="navbar__listContainer">
-                    <li class="navbar__list"><a href="#" class="navbar__link">Features</a></li>
-                    <li class="navbar__list"><a href="#" class="navbar__link">Operations</a></li>
-                    <li class="navbar__list"><a href="#" class="navbar__link">Testimonials</a></li>
-                    <li class="navbar__list"><a class="btn navbar__btn">Order Now</a></li>
+                    <li class="navbar__list"><a href="#features" class="navbar__link">Features</a></li>
+                    <li class="navbar__list"><a href="#operations" class="navbar__link">Operations</a></li>
+                    <li class="navbar__list"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+                    <li class="navbar__list"><a class="btn navbar__btn navbar__link">Order Now</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +38,7 @@
     
                     <h3 class="header__caption caption"> Pinoy snacks are here to satisfy the Filipino craving for the best Pinoy street food! </h3>
     
-                    <a href="#" class="btn-text">Learn More &#8595;</a>
+                    <a  class="btn-text btn-scroll-to">Learn More &#8595;</a>
                 </div>
                 
 
@@ -63,7 +63,7 @@
 
             <div class="border-top"></div>
 
-            <section class="features margin-default">
+            <section class="features padding-default" id="features">
                 <div class="labelContainer">
                     <h4 class="labelContainer__title">Features</h4>
                     <h3 class="labelContainer__desc">Order traditional Filipino snacks within the app and avoid long lines.</h3>
@@ -110,7 +110,7 @@
             <div class="border-top"></div>
 
 
-            <section class="operations margin-default">
+            <section class="operations padding-default" id="operations">
                 <div class="labelContainer">
                     <h4 class="labelContainer__title">operations</h4>
                     <h3 class="labelContainer__desc">This is how you can order through Pinoy Snacks kiosk.</h3>
@@ -118,13 +118,13 @@
 
                 <div class="operations-details margin-top">
                     <div class="operations-details__tab-container">
-                        <button class="btn operations-details__tab operations-details__tab--1">
+                        <button class="btn operations-details__tab operations-details__tab--1 operations-details__tab--active" data-tab="1">
                             <span>01</span>Select Order
                         </button>
-                        <button class="btn operations-details__tab operations-details__tab--2">
+                        <button class="btn operations-details__tab operations-details__tab--2" data-tab="2">
                             <span>02</span>Enter Cash
                         </button>
-                        <button class="btn operations-details__tab operations-details__tab--3">
+                        <button class="btn operations-details__tab operations-details__tab--3" data-tab="3">
                             <span>03</span>Claim Receipt
                         </button>
                     </div>
@@ -171,7 +171,7 @@
             <div class="border-top"></div>
 
 
-            <section class="testimonials margin-default">
+            <section class="testimonials padding-default" id="testimonials">
                 <div class="labelContainer">
                     <h4 class="labelContainer__title">people love it!</h4>
                     <h3 class="labelContainer__desc">Thousands have preferred using Pinoy Snacks Kiosk to get their Filipino Snacks.</h3>
@@ -233,10 +233,16 @@
             <div class="border-top"></div>
 
             <div class="bottomNavigation">
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Operations</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                <ul class="navbar__listContainer">
+                    <li class="navbar__list">
+                        <a href="#features" class="navbar__link">Features</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="#operations" class="navbar__link">Operations</a>
+                    </li>
+                    <li class="navbar__list">
+                        <a href="#testimonials" class="navbar__link">Testimonials</a>
+                    </li>
                 </ul>
                 <img src="img/pinoy-snacks-logo.png" alt="pinoy-snacks-app-logo">
                 <p class="copyright">created by michaelaangelaaustria@gmail.com &copy; <span class="dynmicYear">Year</span></p>

@@ -10,6 +10,11 @@ const tabContents = document.querySelectorAll('.operations-details__content');
 
 const navEl = document.querySelector('.navbar');
 
+const header = document.querySelector('.header');
+const navHeight = navEl.getBoundingClientRect().height;
+
+const allSections = document.querySelectorAll('section');
+
 
 // NAVBAR
 navbar.addEventListener('click', function(e){
@@ -43,7 +48,7 @@ tabContainer.addEventListener('click', function(e){
 
 
 // MENU HOVER ANIMATIONS
-const menuHover = function(e, opacity){
+const menuHover = function(e){
     if(e.target.classList.contains('navbar__link')){
         const link = e.target;
         const siblings = link.closest('.navbar').querySelectorAll('.navbar__link');
@@ -56,3 +61,72 @@ const menuHover = function(e, opacity){
 
 navEl.addEventListener('mouseover', menuHover.bind(0.5));
 navEl.addEventListener('mouseout', menuHover.bind(1));
+
+
+// STICKY NAVIGATION
+const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navHeight}px`
+}
+
+const navSticky = function(entries){
+    const [entry] = entries;
+    if(!entry.isIntersecting) navEl.classList.add('navbar--sticky');
+    else navEl.classList.remove('navbar--sticky');
+}
+
+const observer = new IntersectionObserver(navSticky, options);
+observer.observe(header);
+
+
+// REVEALING SECTIONS
+const sectionOption = {
+    root: null,
+    threshold: 0.15
+}
+
+const showSection = function(entries, observer){
+    const [entry] = entries;
+
+    if(!entry.isIntersecting) return;
+
+    entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
+}
+
+const sectionObserver = new IntersectionObserver(showSection, sectionOption);
+
+allSections.forEach(section => {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
+})
+
+
+// LAZY LOADING IMAGES
+const featureImgs = document.querySelectorAll('img[data-src]');
+
+const imgOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: '100px'
+}
+
+const loadImg = function(entries, observer){
+    const [entry] = entries;
+
+    if(!entry.isIntersecting) return;
+
+    entry.target.src = entry.target.dataset.src;
+
+    entry.target.addEventListener('load', function(){
+        entry.target.classList.remove('lazy-img');
+    })
+
+    observer.unobserve(entry.target);
+
+}
+
+const imgObserver = new IntersectionObserver(loadImg, imgOptions);
+
+featureImgs.forEach(img => imgObserver.observe(img));

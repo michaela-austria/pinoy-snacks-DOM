@@ -9,28 +9,29 @@
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
         <script src="index.js" async defer></script>
     </head>
-    <body>
-        <nav class="navbar">
-            <div class="navbar__left">
-                <div class="navbar__logoContainer">
-                    <img src="img/pinoy-snacks-logo.png" alt="pinoy-snacks-app-logo" class="navbar__logo">
+    <body>       
+        <header class="hero">
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <div class="navbar__logoContainer">
+                        <img src="img/pinoy-snacks-logo.png" alt="pinoy-snacks-app-logo" class="navbar__logo">
+                    </div>
+    
+                    <h1 class="navbar__appText">Pinoy Snacks</h1>
                 </div>
+    
+                <div class="navbar__right">
+                    <ul class="navbar__listContainer">
+                        <li class="navbar__list"><a href="#features" class="navbar__link">Features</a></li>
+                        <li class="navbar__list"><a href="#operations" class="navbar__link">Operations</a></li>
+                        <li class="navbar__list"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+                        <li class="navbar__list"><a class="btn navbar__btn navbar__link">Order Now</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-                <h1 class="navbar__appText">Pinoy Snacks</h1>
-            </div>
 
-            <div class="navbar__right">
-                <ul class="navbar__listContainer">
-                    <li class="navbar__list"><a href="#features" class="navbar__link">Features</a></li>
-                    <li class="navbar__list"><a href="#operations" class="navbar__link">Operations</a></li>
-                    <li class="navbar__list"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
-                    <li class="navbar__list"><a class="btn navbar__btn navbar__link">Order Now</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <main>
-            <header class="header">
+            <div class="header">
                 <div class="header__textContainer">
                     <h2 class="header__tagline heading-1">
                         The first <span>successful</span> and <span>largest</span> Pinoy street food kiosk.
@@ -41,7 +42,7 @@
                     <a  class="btn-text btn-scroll-to">Learn More &#8595;</a>
                 </div>
                 
-
+    
                 <div class="header__heroImgContainer">
                     <figure class="header__heroImg header__heroImg--1">
                         <img src="img/hero-img-1.jpg" alt="hero-img-1">
@@ -59,8 +60,11 @@
                         <img src="img/wave-large.svg" alt="wave-large">
                     </figure>
                 </div>
-            </header>
-
+            </div>
+            
+        </header>
+        
+        <main>
             <div class="border-top"></div>
 
             <section class="features padding-default" id="features">
@@ -71,7 +75,7 @@
 
                 <div class="features__container">
                     <div class="features__imgContainer">
-                        <img src="img/Feature-Desktop.png" alt="Pinoy-Snacks-Desktop" class="features__img">
+                        <img src="img/Feature-Desktop-lazy.png" data-src="img/Feature-Desktop.png" alt="Pinoy-Snacks-Desktop" class="features__img lazy-img">
                     </div>
 
                     <div class="features__description">
@@ -88,7 +92,7 @@
 
                 <div class="features__container">
                     <div class="features__imgContainer change-order">
-                        <img src="img/Feature-Mobile.png" alt="Pinoy-Snacks-Mobile" class="features__img">
+                        <img src="img/Feature-Mobile-lazy.png" data-src="img/Feature-Mobile.png" alt="Pinoy-Snacks-Mobile" class="features__img lazy-img">
                     </div>
 
                     <div class="features__description">

@@ -5,13 +5,14 @@
     grid-template-columns: max-content 88.4rem max-content;
     grid-template-rows: 1fr;
     align-items: center;
-    column-gap: 4rem;
     position: relative;
-
-    // &>:first-child{
+    overflow: hidden;
+    
+    // &>:first-child{        
     .slide{
         grid-column: 2/3;
         grid-row: 1/2;
+        transition: transform .8s;
     }
 
     // &>:nth-child(2){

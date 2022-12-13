@@ -15,6 +15,10 @@ const navHeight = navEl.getBoundingClientRect().height;
 
 const allSections = document.querySelectorAll('section');
 
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnModals = document.querySelectorAll('.btn__modal');
+
 
 // NAVBAR
 navbar.addEventListener('click', function(e){
@@ -201,3 +205,25 @@ const slider = function () {
     })
 }
 slider();
+
+
+
+// MODAL
+const openModal = function(){
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+}
+
+const closeModal = function(){
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+btnModals.forEach(btn => btn.addEventListener('click', openModal));
+overlay.addEventListener('click', closeModal);
+
+
+// Copyright
+const dynamicYear = document.querySelector('.dynamicYear');
+const currYear = new Date().getFullYear();
+dynamicYear.textContent = currYear;

@@ -25,7 +25,7 @@
                         <li class="navbar__list"><a href="#features" class="navbar__link">Features</a></li>
                         <li class="navbar__list"><a href="#operations" class="navbar__link">Operations</a></li>
                         <li class="navbar__list"><a href="#testimonials" class="navbar__link">Testimonials</a></li>
-                        <li class="navbar__list"><a class="btn navbar__btn navbar__link">Order Now</a></li>
+                        <li class="navbar__list"><a class="btn navbar__btn navbar__link btn__modal">Order Now</a></li>
                     </ul>
                 </div>
             </nav>
@@ -232,7 +232,7 @@
         <footer class="footer">
             <section class="cta">
                 <h3 class="cta__text">The best way to order Filipino Snacks is through Pinoy Snacks Kiosk App!</h3>
-                <button class="btn cta__btn">Open the app and start ordering!</button>
+                <button class="btn cta__btn btn__modal">Open the app and start ordering!</button>
             </section>
 
             <div class="border-top"></div>
@@ -250,9 +250,17 @@
                     </li>
                 </ul>
                 <img src="img/pinoy-snacks-logo.png" alt="pinoy-snacks-app-logo">
-                <p class="copyright">created by michaelaangelaaustria@gmail.com &copy; <span class="dynmicYear">Year</span></p>
+                <p class="copyright">created by michaelaangelaaustria@gmail.com &copy; <span class="dynamicYear">Year</span></p>
             </div>
 
         </footer>
+
+        <div class="modal hidden">
+            <img src="img/pinoy-snacks-logo.png" alt="pinoy-snacks-logo" class="modal__img">
+            <h3 class="modal__text heading-3">Open the app and start ordering</h3>
+            <a href="https://orderpinoysnacks-austriamichaela.vercel.app/" target="_blank" class="modal__button btn"><iconify-icon icon="material-symbols:touch-app"></iconify-icon> Pinoy Snacks Kiosk</a>
+        </div>
+
+        <div class="overlay hidden"></div>
     </body>
 </html>

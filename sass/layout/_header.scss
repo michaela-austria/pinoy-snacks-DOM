@@ -7,12 +7,33 @@
     gap: 8rem;
     margin: 0 11.4rem;
 
+    @media only screen and (max-width: $bp-tablet) {
+        margin: 0 4.4rem;
+        gap: 4rem;
+    }
+
+    //659px
+    @media only screen and (max-width: 41.188rem) {
+        height: calc(100vh - 16rem);
+        grid-template-columns: 1fr;
+        // grid-template-rows: repeat(2,min-content);
+        grid-template-rows: min-content max-content;
+        column-gap: 0;
+        align-content: center;
+    }
+
     &__textContainer{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
         gap: 2.8rem;
+
+        //659px
+        @media only screen and (max-width: 41.188rem) {
+            grid-row: 1/2;
+            grid-column: 1 / span 2;
+        }
     }
 
     &__tagline{
@@ -39,6 +60,12 @@
     &__heroImgContainer{
         grid-column: 2 / 3;
         grid-row: 1 / -1;
+
+        //659px
+        @media only screen and (max-width: 41.188rem) {
+            grid-row: 2/-1;
+            grid-column: 2 / -1;
+        }
     }
 
 }

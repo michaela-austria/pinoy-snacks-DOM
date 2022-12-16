@@ -1,20 +1,43 @@
 .features{
     &__container{
-        height: 50rem;
+        // height: 50rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: max-content;
         margin: 10rem 16.9rem 0 16.9rem;
+
+        @media only screen and (max-width: $bp-laptop) {
+            margin: 10rem 10rem 0 10rem;
+        }
+
+        @media only screen and (max-width: $bp-tablet) {
+            margin: 10rem 8rem 0 8rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, min-content);
+        }
     }
 
     &__img{
         width: 100%;
-        height: 100%;
+        display: block;
+        // height: 100%;
+
+        @media only screen and (max-width: $bp-mobile) {
+            // width: 10%;
+        }
     }
 
     &__imgContainer{
         overflow: hidden;
         object-fit: cover;
+
+        @media only screen and (max-width: $bp-mobile) {
+            // grid-row: 1/2;
+            width: 100%;
+        }
     }
 
     &__description{
@@ -22,6 +45,10 @@
         flex-direction: column;
         gap: 1.8rem;
         justify-content: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            grid-row: 2/-1;
+        }
     }
 
     &__iconContainer{

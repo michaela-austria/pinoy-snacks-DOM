@@ -2,6 +2,22 @@
 
 html{
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-laptop-lg) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-laptop) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+        font-size: 43.75%;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 37.5%;
+    }
 }
 
 body{
@@ -31,6 +47,10 @@ body{
 .labelContainer{
     width: 93.4rem;
     margin: 0 auto;
+
+    @media only screen and (max-width: $bp-tablet) {
+        width: 80%;
+    }
 
     &__title{
         font-size: $fs-h5;

@@ -1,4 +1,10 @@
-.padding-default{padding: 14.5rem 0;}
+.padding-default{
+    padding: 14.5rem 0;
+
+    @media only screen and (max-width: $bp-mobile) {
+        padding: 10.5rem 0;
+    }
+}
 .margin-top{margin-top: 10rem !important;}
 
 .border-top{border-top: 1px solid rgba($color-gray-2, 0.3);}

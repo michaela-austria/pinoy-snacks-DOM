@@ -28,6 +28,11 @@ footer{
     text-align: center;
     margin-bottom: 11.2rem !important;
 
+    @media only screen and (max-width: $bp-tablet) {
+        width: auto;
+        padding: 0 4rem;
+    }
+
     &__text{
         font-size: $fs-h4;
     }
@@ -50,11 +55,21 @@ footer{
     align-items: center;
     gap: 2.4rem;
 
+    @media only screen and (max-width: $bp-tablet) {
+        width: auto;
+    }
+
     ul{
         font-size: $fs-h6;
         list-style: none;
         display: flex;
         gap: 4.9rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            flex-wrap: wrap;
+            gap: 2.9rem;
+            justify-content: center;
+        }
 
         li{
             padding: 2rem 4rem;
@@ -95,6 +110,7 @@ footer{
     transform: translate(-50%, -50%);
     transition: all 0.5s;
     z-index: 4000;
+    text-align: center;
 
     &__img{
         width: 15%;

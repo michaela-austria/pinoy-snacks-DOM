@@ -2,12 +2,25 @@
     width: max-content;
     margin: 0 auto;
 
+    @media only screen and (max-width: $bp-tablet) {
+        width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+        margin-top: 5rem !important;
+    }
+
 
     &__tab-container{
         color: $color-white;
         display: flex;
         justify-content: center;
         gap: 2.4rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            flex-direction: column;
+            gap: 1.2rem;
+        }
     }
 
     &__tab{
@@ -15,6 +28,10 @@
         font-weight: $fw-bold;
         box-shadow: 0px 4px 4px rgba($color-black, 0.20);
         transition: all .5s;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: $fs-base;
+        }
 
         &--1{
             background-color: $color-brown-2;
@@ -43,6 +60,10 @@
         &--active{
             transform: translateY(-5px);
             box-shadow: 0px 4px 10px rgba($color-black, 0.20);
+
+            @media only screen and (max-width: $bp-mobile) {
+                transform: translateY(0) scale(1.1);
+            }
         }
 
         span{
@@ -60,6 +81,15 @@
         margin-top: -2.4rem;
         display: none;
         transition: all .5s;
+
+        @media only screen and (max-width: $bp-tablet) {
+            width: auto;
+            padding: 6.2rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile) {
+            margin-top: 2.4rem;
+        }
 
         &--active{
             display: grid;

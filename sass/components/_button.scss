@@ -28,6 +28,14 @@
     padding-bottom: 6px;
     border-bottom: 1.5px solid currentColor;
     cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.55, 0, 1, 0.45);
+
+    &:hover{
+        background-color: $color-green-2;
+        color: $color-white;
+        padding: 6px;
+        border-radius: 5px;
+    }
 }
 
 

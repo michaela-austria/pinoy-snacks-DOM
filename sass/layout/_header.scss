@@ -22,6 +22,10 @@
         align-content: center;
     }
 
+    @media only screen and (max-width: $bp-mobile) {
+        height: max-content;
+    }
+
     &__textContainer{
         display: flex;
         flex-direction: column;
@@ -64,8 +68,12 @@
         //659px
         @media only screen and (max-width: 41.188rem) {
             grid-row: 2/-1;
-            grid-column: 2 / -1;
+            grid-column: 1 / -1;
         }
+
+        // @media only screen and (max-width: $bp-mobile) {
+        //     grid-column: 1 / -1;
+        // }
     }
 
 }

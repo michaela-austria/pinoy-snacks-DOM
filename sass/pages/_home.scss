@@ -1,5 +1,13 @@
 .hero{
     height: 100vh;
+
+    @media only screen and (max-width: $bp-mobile) {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        height: max-content;
+        padding-bottom: 4rem;
+    }
 }
 
 section{
@@ -59,6 +67,10 @@ footer{
         width: auto;
     }
 
+    @media only screen and (max-width: $bp-mobile) {
+        margin-top: 5rem !important;
+    }
+
     ul{
         font-size: $fs-h6;
         list-style: none;
@@ -111,6 +123,10 @@ footer{
     transition: all 0.5s;
     z-index: 4000;
     text-align: center;
+
+    @media only screen and (max-width: $bp-mobile) {
+        width: 80%;
+    }
 
     &__img{
         width: 15%;
